@@ -6,8 +6,8 @@ let settings = {
     offset: '16px',
     mobileFirst: false,
     container: {
-        maxWidth: '1170px',
-        fields: '135px'
+        maxWidth: '1440px',
+        fields: '120px'
     },
     breakPoints: {
         lm: {

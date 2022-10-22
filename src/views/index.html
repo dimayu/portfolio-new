@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -38,16 +38,76 @@
 <!--
     *********HEADER*******
 -->
-<header class="header">
+<header class="header" id="home">
     <div class="wrapper">
         <div class="header__items">
             <div class="header__items__item">
-                <div class="mobile-nav-button">
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
-                    <div class="mobile-nav-button__line"></div>
+                <a href="#">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <nav class="header__items__item">
+                <ul class="header__menu">
+                    <li class="header__menu__item"><a href="#home">Главная</a></li>
+                    <li class="header__menu__item"><a href="#about-me">Обо мне</a></li>
+                    <li class="header__menu__item"><a href="#porfolio">Портфолио</a></li>
+                    <li class="header__menu__item"><a href="contacts">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__items__item">
+                <a href="" download="">Скачать CV</a>
+            </div>
+        </div>
+        <div class="section home">
+            <div class="home__text-bg">
+                hello
+            </div>
+            <div class="home__items">
+                <div class="home__items__item">
+                    <h2>Меня зовут<br>Шарипзянов Дамир</h2>
+                    <h1>Я WEB DEVELOPER</h1>
+                </div>
+                <div class="home__items__item">
+                    <img src="img/photo.png" alt="photo">
+                </div>
+                <div class="home__items__item social-links">
+                    <h4 class="social-links__title">Контакты</h4>
+                    <hr>
+                    <div class="social-links__items">
+                        <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#mail"></use>
+                            </svg>
+                        </a>
+                        <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#skype"></use>
+                            </svg>
+                        </a>
+                        <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/"
+                           class="social-links__items__item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#in"></use>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/dimayu" class="social-links__items__item">
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#git"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="mobile-nav-button">
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
+            <div class="mobile-nav-button__line"></div>
         </div>
     </div>
 </header>
@@ -57,29 +117,12 @@
 -->
 
 <nav class="mobile-menu">
-    <ul>
-        <li class="active">
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#"></a>
-        </li>
-        <li>
-            <a href="#">
-            </a>
-        </li>
+    <ul class="mobile-menu__lists">
+        <li class="mobile-menu__lists__item"><a href="#home">Главная</a></li>
+        <li class="mobile-menu__lists__item"><a href="#about-me">Обо мне</a></li>
+        <li class="mobile-menu__lists__item"><a href="#stack">Мой стек</a></li>
+        <li class="mobile-menu__lists__item"><a href="#porfolio">Портфолио</a></li>
+        <li class="mobile-menu__lists__item"><a href="contacts">Контакты</a></li>
     </ul>
 </nav>
 
@@ -87,12 +130,115 @@
     *********MAIN*******
 -->
 <main class="main">
-
+    <section class="section about-me" id="about-me">
+        <div class="wrapper">
+            <h2 class="section__title">Обо мне</h2>
+            <div>
+                5 лет работаю HTML верстальщиком
+                Глубоко изучаю frontend, выполнил много работ по интеграции верстки на CMS WP и Joomla.
+                Ценю в людях честность, открытость и серьезное отношение к делу.
+            </div>
+        </div>
+    </section>
+    <section class="section section-stack">
+        <div class="wrapper">
+            <h2 class="section__title">Мой стек</h2>
+            <div class="section-stack__item">
+                <div class="stack">
+                    <div class="stack__title">HTML</div>
+                    <div class="stack__percent stack__percent--1" style="width: 90%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">CSS</div>
+                    <div class="stack__percent stack__percent--2" style="width: 90%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">SCSS</div>
+                    <div class="stack__percent stack__percent--3" style="width: 75%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">LESS</div>
+                    <div class="stack__percent stack__percent--4" style="width: 70%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">JS</div>
+                    <div class="stack__percent stack__percent--5" style="width: 65%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">Gulp</div>
+                    <div class="stack__percent stack__percent--6" style="width: 50%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">GIT</div>
+                    <div class="stack__percent stack__percent--7" style="width: 50%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">FIGMA</div>
+                    <div class="stack__percent stack__percent--8" style="width: 60%;"></div>
+                </div>
+                <div class="stack">
+                    <div class="stack__title">Photoshop</div>
+                    <div class="stack__percent stack__percent--9" style="width: 55%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section portfolio" id="portfolio">
+        <div class="wrapper">
+            <h2 class="section__title">Мои работы</h2>
+            <div class="portfolio__items">
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/westwing.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <h4 class="portfolio__items__item--title">gskjhglfkjds bfdkjfbkjs fhdkj</h4>
+                        <a href="https://westwing.ru" class="portfolio__items__item--link">посмотреть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
+<footer class="section footer">
+    <div class="wrapper">
+        <h2 class="section__title">Контакты</h2>
+        <div class="footer__social-links social-links">
+            <h4 class="social-links__title">Контакты</h4>
+            <hr>
+            <div class="social-links__items">
+                <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#mail"></use>
+                    </svg>
+                </a>
+                <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#skype"></use>
+                    </svg>
+                </a>
+                <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/" class="social-links__items__item">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#in"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/dimayu" class="social-links__items__item">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#git"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <script src="js/main.js"></script>
 </body>
 
