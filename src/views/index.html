@@ -39,40 +39,54 @@
     *********HEADER*******
 -->
 <header class="header" id="home">
-    <div class="wrapper">
-        <div class="header__items">
-            <div class="header__items__item">
-                <a href="#">
-                    <img src="img/logo.svg" alt="logo">
-                </a>
-            </div>
-            <nav class="header__items__item">
-                <ul class="header__menu">
-                    <li class="header__menu__item"><a href="#home">Главная</a></li>
-                    <li class="header__menu__item"><a href="#about-me">Обо мне</a></li>
-                    <li class="header__menu__item"><a href="#porfolio">Портфолио</a></li>
-                    <li class="header__menu__item"><a href="contacts">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="header__items__item">
-                <a href="" download="">Скачать CV</a>
+    <div class="header__nav">
+        <div class="wrapper">
+            <div class="header__nav__items">
+                <div class="header__nav__items__item">
+                    <a href="#">
+                        <img src="img/logo.svg" alt="logo" width="60px" height="30px">
+                    </a>
+                </div>
+                <nav class="header__nav__items__item header__nav__items__item--nav">
+                    <ul class="header__menu">
+                        <li class="header__menu__item"><a href="#home" class="header__menu__item--link">Главная</a></li>
+                        <li class="header__menu__item"><a href="#about-me" class="header__menu__item--link">Обо мне</a></li>
+                        <li class="header__menu__item"><a href="#stack" class="header__menu__item--link">Мой стек</a></li>
+                        <li class="header__menu__item"><a href="#porfolio" class="header__menu__item--link">Портфолио</a></li>
+                        <li class="header__menu__item"><a href="contacts" class="header__menu__item--link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__nav__items__item">
+                    <a href="" download="">
+                        <span>Скачать CV</span>
+                        <svg width="14px" height="14px">
+                            <use xlink:href="img/sprites/sprite.svg#download"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="wrapper">
         <div class="section home">
             <div class="home__text-bg">
                 hello
             </div>
             <div class="home__items">
-                <div class="home__items__item">
+                <div class="home__items__item home__items__item--text">
                     <h2>Меня зовут<br>Шарипзянов Дамир</h2>
                     <h1>Я WEB DEVELOPER</h1>
                 </div>
-                <div class="home__items__item">
-                    <img src="img/photo.png" alt="photo">
+                <div class="home__items__item home__items__item--photo">
+                    <div class="home__items__item--photo-inner">
+                        <div class="home__items__item--photo-inner--pic">
+                            <img src="img/photo.png" alt="photo">
+                        </div>
+                    </div>
                 </div>
-                <div class="home__items__item social-links">
+                <div class="home__items__item home__items__item--social social-links">
                     <h4 class="social-links__title">Контакты</h4>
-                    <hr>
+                    <hr class="social-links__hr">
                     <div class="social-links__items">
                         <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
                             <svg>
@@ -133,7 +147,7 @@
     <section class="section about-me" id="about-me">
         <div class="wrapper">
             <h2 class="section__title">Обо мне</h2>
-            <div>
+            <div class="about-me__text">
                 5 лет работаю HTML верстальщиком
                 Глубоко изучаю frontend, выполнил много работ по интеграции верстки на CMS WP и Joomla.
                 Ценю в людях честность, открытость и серьезное отношение к делу.
@@ -142,7 +156,7 @@
     </section>
     <section class="section section-stack">
         <div class="wrapper">
-            <h2 class="section__title">Мой стек</h2>
+            <h2 class="section__title">Skills</h2>
             <div class="section-stack__item">
                 <div class="stack">
                     <div class="stack__title">HTML</div>
@@ -162,7 +176,7 @@
                 </div>
                 <div class="stack">
                     <div class="stack__title">JS</div>
-                    <div class="stack__percent stack__percent--5" style="width: 65%;"></div>
+                    <div class="stack__percent stack__percent--5" style="width: 50%;"></div>
                 </div>
                 <div class="stack">
                     <div class="stack__title">Gulp</div>
@@ -192,47 +206,130 @@
                         <img src="img/westwing.jpg" alt="pic">
                     </div>
                     <div class="portfolio__items__item--back">
-                        <h4 class="portfolio__items__item--title">gskjhglfkjds bfdkjfbkjs fhdkj</h4>
-                        <a href="https://westwing.ru" class="portfolio__items__item--link">посмотреть</a>
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Проработал в компании 9 месяцев<br>
+                                Редизайн сайта + стилизация различных фитч</h4>
+                            <a href="https://westwing.ru" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/arlihan.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
+                            <a href="https://arhilan.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/sarsteklo.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
+                            <a href="https://sarsteklostroy.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/82-15.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
+                                Интеграция на JOOMLA</h4>
+                            <a href="https://8215.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/eko.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
+                            <a href="https://ileco-23.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/taxi.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
+                                Интеграция на JOOMLA</h4>
+                            <a href="https://taxi-vivo.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/dsk.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
+                                Интеграция на JOOMLA</h4>
+                            <a href="https://westwing.ru" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__items__item">
+                    <div class="portfolio__items__item--front">
+                        <img src="img/artwood.jpg" alt="pic">
+                    </div>
+                    <div class="portfolio__items__item--back">
+                        <div class="portfolio__items__item--text">
+                            <h4 class="portfolio__items__item--title">Верстка лендинга<br>
+                                Интеграция на JOOMLA</h4>
+                            <a href="https://shkaf.8215.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
-
-<footer class="section footer">
+<footer class="footer">
     <div class="wrapper">
-        <h2 class="section__title">Контакты</h2>
-        <div class="footer__social-links social-links">
-            <h4 class="social-links__title">Контакты</h4>
-            <hr>
-            <div class="social-links__items">
-                <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
-                    <svg>
-                        <use xlink:href="img/sprites/sprite.svg#mail"></use>
-                    </svg>
-                </a>
-                <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
-                    <svg>
-                        <use xlink:href="img/sprites/sprite.svg#skype"></use>
-                    </svg>
-                </a>
-                <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
-                    <svg>
-                        <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/" class="social-links__items__item">
-                    <svg>
-                        <use xlink:href="img/sprites/sprite.svg#in"></use>
-                    </svg>
-                </a>
-                <a href="https://github.com/dimayu" class="social-links__items__item">
-                    <svg>
-                        <use xlink:href="img/sprites/sprite.svg#git"></use>
-                    </svg>
-                </a>
+        <div class="footer__content">
+            <h2 class="section__title">Контакты</h2>
+            <div class="footer__social-links social-links">
+                <div class="social-links__items">
+                    <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#mail"></use>
+                        </svg>
+                    </a>
+                    <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#skype"></use>
+                        </svg>
+                    </a>
+                    <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/" class="social-links__items__item">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#in"></use>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/dimayu" class="social-links__items__item">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#git"></use>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
