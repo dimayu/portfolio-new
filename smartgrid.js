@@ -11,7 +11,7 @@ let settings = {
     },
     breakPoints: {
         lm: {
-            width: '1280px',
+            width: '1440px',
             fields: '50px'
         },
         md: {

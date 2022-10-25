@@ -1,15 +1,27 @@
 window.addEventListener('load', function () {
     //Menu button on click event
-    // document.querySelector('.mobile-nav-button').addEventListener('click', function () {
-    //     // Toggles a class on the menu button to transform the burger menu into a cross
-    //     document.querySelector('.mobile-nav-button .mobile-nav-button__line:nth-of-type(1)').toggle('mobile-nav-button__line--1');
-    //     document.querySelector('.mobile-nav-button .mobile-nav-button__line:nth-of-type(2)').toggle('mobile-nav-button__line--2');
-    //     document.querySelector('.mobile-nav-button .mobile-nav-button__line:nth-of-type(3)').toggle('mobile-nav-button__line--3');
-    //
-    //     // Toggles a class that slides the menu into view on the screen
-    //     document.querySelector('.mobile-menu').toggle('mobile-menu--open');
-    //     return false;
-    // });
+    document.querySelector('.header-mobile__button').addEventListener('click', function () {
+        // Toggles a class on the menu button to transform the burger menu into a cross
+        document.querySelector('.header-mobile__button .header-mobile__button--line:nth-of-type(1)').classList.toggle('header-mobile__button--line--1');
+        document.querySelector('.header-mobile__button .header-mobile__button--line:nth-of-type(2)').classList.toggle('header-mobile__button--line--2');
+        document.querySelector('.header-mobile__button .header-mobile__button--line:nth-of-type(3)').classList.toggle('header-mobile__button--line--3');
+
+        // Toggles a class that slides the menu into view on the screen
+        document.querySelector('.mobile-menu').classList.toggle('mobile-menu--open');
+
+        document.querySelector('.js-menu__link').classList.remove('mobile-menu--open');
+        return false;
+    });
+
+    document.querySelector('.mobile-menu__lists').addEventListener('click', function () {
+        // Toggles a class on the menu button to transform the burger menu into a cross
+        document.querySelector('.header-mobile__button .header-mobile__button--line:nth-of-type(1)').classList.remove('header-mobile__button--line--1');
+        document.querySelector('.header-mobile__button .header-mobile__button--line:nth-of-type(2)').classList.remove('header-mobile__button--line--2');
+        document.querySelector('.header-mobile__button .header-mobile__button--line:nth-of-type(3)').classList.remove('header-mobile__button--line--3');
+
+        document.querySelector('.mobile-menu').classList.remove('mobile-menu--open');
+        return false;
+    });
 });
 window.addEventListener('load', function () {
     let menu = document.querySelector('.js-menu');

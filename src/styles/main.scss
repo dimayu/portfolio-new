@@ -9,6 +9,10 @@
 $color-black: #252525;
 $color-yellow: #e07f14;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -46,7 +50,11 @@ h2 {
   color: #fff;
   position: relative;
 
-  &::after {
+  @include md-block() {
+    font-size: 30px;
+  }
+
+  &::after { //line after h2
     content: '';
     position: absolute;
     left: 0;
@@ -54,6 +62,10 @@ h2 {
     height: 6px;
     width: 180px;
     background-color: $color-yellow;
+
+    @include md-block() {
+      content: none;
+    }
   }
 }
 
@@ -90,7 +102,7 @@ h2 {
   }
 }
 
-.mobile-nav-button {
+.header-mobile__button {
   position: relative;
   width: 24px;
   height: 15px;
@@ -102,33 +114,33 @@ h2 {
     display: block;
   }
 
-  .mobile-nav-button__line {
+  .header-mobile__button--line {
     position: relative;
     width: 100%;
     height: 2px;
     transition: 1s ease;
-    background-color: $color-black;
+    background-color: $color-yellow;
     border-radius: 3px;
 
     &:nth-of-type(2) {
       margin: 5px 0;
     }
-  }
 
-  .mobile-nav-button__line--1 {
-    position: absolute;
-    top: 13px;
-    transform: rotate(45deg);
-  }
+    &--1 {
+      position: absolute;
+      top: 13px;
+      transform: rotate(45deg);
+    }
 
-  .mobile-nav-button__line--2 {
-    display: none;
-  }
+    &--2 {
+      display: none;
+    }
 
-  .mobile-nav-button__line--3 {
-    position: absolute;
-    top: 13px;
-    transform: rotate(135deg);
+    &--3 {
+      position: absolute;
+      top: 13px;
+      transform: rotate(135deg);
+    }
   }
 }
 
@@ -142,7 +154,7 @@ h2 {
   max-width: 500px;
   height: 100vh;
   transition: 0.6s ease;
-  background: #F7F7F7;
+  background: #1d1d1d;
   opacity: 0;
 
   ul {
@@ -164,9 +176,9 @@ h2 {
         margin: 0 auto;
         text-align: center;
         text-decoration: none;
-        color: #000;
+        color: $color-yellow;
         font-size: 20px;
-        font-weight: bold;
+        font-weight: 300;
 
         &::after {
           content: "";
@@ -227,6 +239,10 @@ h2 {
     z-index: 9;
     background-color: #1d1d1d;
 
+    @include md-block() {
+      padding: 6px 0;
+    }
+
     &__items {
       display: flex;
       justify-content: space-between;
@@ -235,6 +251,14 @@ h2 {
       &__item {
         &--nav {
           width: 50%;
+
+          @include lm-block() {
+            width: 70%;
+          }
+
+          @include md-block() {
+            display: none;
+          }
         }
       }
     }
@@ -258,6 +282,10 @@ h2 {
   &__title {
     font-size: 24px;
     writing-mode: vertical-rl;
+
+    @include md-block() {
+      writing-mode: horizontal-tb;
+    }
   }
 
   &__hr {
@@ -266,6 +294,11 @@ h2 {
     border: none;
     background-color: $color-yellow;
     margin: 20px 0;
+
+    @include md-block() {
+      width: 60px;
+      height: 2px;
+    }
   }
 
   &__items {
@@ -299,6 +332,10 @@ h2 {
     mix-blend-mode: screen;
     opacity: 0.5;
     z-index: -1;
+
+    @include md-block() {
+      display: none;
+    }
   }
 
   &__items {
@@ -306,15 +343,26 @@ h2 {
     @include row-flex();
     align-items: flex-end;
 
+    @include md-block() {
+      height: 80%;
+      margin-top: 20%;
+    }
+
     &__item {
       @include col();
 
       &--text {
         @include size(5);
+        @include size-md(12);
+
+        @include md-block() {
+          text-align: center;
+        }
       }
 
       &--photo {
         @include size(5);
+        @include size-md(12);
         display: flex;
         justify-content: center;
 
@@ -328,6 +376,11 @@ h2 {
           background-color: $color-yellow;
           overflow: hidden;
 
+          @include xxs-block() {
+            width: 200px;
+            height: 200px;
+          }
+
           &--pic {
             margin-bottom: -20px;
           }
@@ -336,6 +389,7 @@ h2 {
 
       &--social {
         @include size(2);
+        @include size-md(12);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -343,6 +397,10 @@ h2 {
         .social-links__items {
           display: flex;
           flex-direction: column;
+
+          @include md-block() {
+            flex-direction: row;
+          }
         }
       }
     }
@@ -355,7 +413,7 @@ h2 {
   &__title {
     text-align: center;
 
-    &::after {
+    &::after { //line after section__title
       content: '';
       position: absolute;
       left: calc(50% - 90px);
@@ -363,6 +421,12 @@ h2 {
       height: 6px;
       width: 180px;
       background-color: $color-yellow;
+
+      @include md-block() {
+        width: 60px;
+        height: 2px;
+        left: calc(50% - 30px);
+      }
     }
   }
 }
@@ -397,6 +461,10 @@ h2 {
     margin: 40px auto 0;
     font-size: 24px;
     text-align: center;
+
+    @include md-block() {
+      font-size: 16px;
+    }
   }
 
   @keyframes movebg {
@@ -419,6 +487,11 @@ h2 {
   margin-top: 40px;
   box-sizing: border-box;
 
+  @include md-block() {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
   &__title {
     position: relative;
     z-index: 2;
@@ -430,6 +503,12 @@ h2 {
     align-items: center;
     font-size: 18px;
     text-transform: uppercase;
+
+    @include md-block() {
+      width: 100px;
+      height: 20px;
+      font-size: 14px;
+    }
   }
 
   &__percent {
@@ -448,9 +527,17 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
 
+  @include md-block() {
+    background-image: none;
+  }
+
   &__item {
     width: 70%;
     margin: 0 auto;
+
+    @include md-block() {
+      width: 100%;
+    }
   }
 }
 
@@ -461,12 +548,24 @@ h2 {
     overflow: hidden;
     position: relative;
     @include row-flex();
+    justify-content: center;
     margin-top: 40px;
     margin-bottom: 400px;
+
+    @include md-block() {
+      margin-bottom: 240px;
+    }
+
+    @include xxs-block() {
+      margin-bottom: 140px;
+    }
 
     &__item {
       @include col();
       @include size(4);
+      @include size-md(6);
+      @include size-sm(10);
+      @include size-xxs(12);
 
       cursor: pointer;
       height: 200px;
@@ -476,6 +575,14 @@ h2 {
       transform-style: preserve-3d;
       box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
       margin-bottom: 20px;
+
+      @include sm-block() {
+        height: 300px;
+      }
+
+      @include xxs-block() {
+        height: 240px;
+      }
 
       &:hover {
         transform: rotateY(-180deg);
@@ -499,6 +606,12 @@ h2 {
       &--front {
         background: linear-gradient(to top left, $color-yellow, #1d1d1d);
         transform-style: preserve-3d;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
 
       &--back {
@@ -539,6 +652,11 @@ h2 {
     background-size: cover;
     background-position: center top;
     padding-top: 60px;
+
+    @include md-block() {
+      height: 300px;
+      padding-top: 100px;
+    }
   }
 
   .social-links__items {
@@ -556,6 +674,11 @@ h2 {
       svg {
         width: 40px;
         height: 40px;
+
+        @include md-block() {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
   }

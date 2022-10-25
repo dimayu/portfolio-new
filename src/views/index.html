@@ -57,22 +57,27 @@
                     </ul>
                 </nav>
                 <div class="header__nav__items__item">
-                    <a href="" download="">
+                    <a href="resume.pdf" download="resume.pdf">
                         <span>Скачать CV</span>
                         <svg width="14px" height="14px">
                             <use xlink:href="img/sprites/sprite.svg#download"></use>
                         </svg>
                     </a>
                 </div>
+                <div class="header-mobile__button">
+                    <div class="header-mobile__button--line"></div>
+                    <div class="header-mobile__button--line"></div>
+                    <div class="header-mobile__button--line"></div>
+                </div>
             </div>
         </div>
         <nav class="mobile-menu">
-            <ul class="mobile-menu__lists">
-                <li class="mobile-menu__lists__item"><a href="#home">Главная</a></li>
-                <li class="mobile-menu__lists__item"><a href="#about-me">Обо мне</a></li>
-                <li class="mobile-menu__lists__item"><a href="#stack">Мой стек</a></li>
-                <li class="mobile-menu__lists__item"><a href="#porfolio">Портфолио</a></li>
-                <li class="mobile-menu__lists__item"><a href="#contacts">Контакты</a></li>
+            <ul class="mobile-menu__lists js-menu">
+                <li class="mobile-menu__lists__item"><a href="#home" class="js-menu__link js-menu__link-active">Главная</a></li>
+                <li class="mobile-menu__lists__item"><a href="#about-me" class="js-menu__link">Обо мне</a></li>
+                <li class="mobile-menu__lists__item"><a href="#stack" class="js-menu__link">Мой стек</a></li>
+                <li class="mobile-menu__lists__item"><a href="#portfolio" class="js-menu__link">Портфолио</a></li>
+                <li class="mobile-menu__lists__item"><a href="#contacts" class="js-menu__link">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -126,11 +131,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mobile-nav-button">
-            <div class="mobile-nav-button__line"></div>
-            <div class="mobile-nav-button__line"></div>
-            <div class="mobile-nav-button__line"></div>
         </div>
     </div>
 </header>
