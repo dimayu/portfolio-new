@@ -38,7 +38,7 @@
 <!--
     *********HEADER*******
 -->
-<header class="header" id="home">
+<header class="header">
     <div class="header__nav">
         <div class="wrapper">
             <div class="header__nav__items">
@@ -48,12 +48,12 @@
                     </a>
                 </div>
                 <nav class="header__nav__items__item header__nav__items__item--nav">
-                    <ul class="header__menu">
-                        <li class="header__menu__item"><a href="#home" class="header__menu__item--link">Главная</a></li>
-                        <li class="header__menu__item"><a href="#about-me" class="header__menu__item--link">Обо мне</a></li>
-                        <li class="header__menu__item"><a href="#stack" class="header__menu__item--link">Мой стек</a></li>
-                        <li class="header__menu__item"><a href="#porfolio" class="header__menu__item--link">Портфолио</a></li>
-                        <li class="header__menu__item"><a href="contacts" class="header__menu__item--link">Контакты</a></li>
+                    <ul class="header__menu js-menu">
+                        <li class="header__menu__item"><a href="#home" class="header__menu__item--link js-menu__link js-menu__link-active">Главная</a></li>
+                        <li class="header__menu__item"><a href="#about-me" class="header__menu__item--link js-menu__link">Обо мне</a></li>
+                        <li class="header__menu__item"><a href="#stack" class="header__menu__item--link js-menu__link">Мой стек</a></li>
+                        <li class="header__menu__item"><a href="#portfolio" class="header__menu__item--link js-menu__link">Портфолио</a></li>
+                        <li class="header__menu__item"><a href="#contacts" class="header__menu__item--link js-menu__link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header__nav__items__item">
@@ -66,9 +66,18 @@
                 </div>
             </div>
         </div>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__lists">
+                <li class="mobile-menu__lists__item"><a href="#home">Главная</a></li>
+                <li class="mobile-menu__lists__item"><a href="#about-me">Обо мне</a></li>
+                <li class="mobile-menu__lists__item"><a href="#stack">Мой стек</a></li>
+                <li class="mobile-menu__lists__item"><a href="#porfolio">Портфолио</a></li>
+                <li class="mobile-menu__lists__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
     </div>
     <div class="wrapper">
-        <div class="section home">
+        <div class="section home" id="home">
             <div class="home__text-bg">
                 hello
             </div>
@@ -127,20 +136,6 @@
 </header>
 
 <!--
-    *****NAVIGATION******
--->
-
-<nav class="mobile-menu">
-    <ul class="mobile-menu__lists">
-        <li class="mobile-menu__lists__item"><a href="#home">Главная</a></li>
-        <li class="mobile-menu__lists__item"><a href="#about-me">Обо мне</a></li>
-        <li class="mobile-menu__lists__item"><a href="#stack">Мой стек</a></li>
-        <li class="mobile-menu__lists__item"><a href="#porfolio">Портфолио</a></li>
-        <li class="mobile-menu__lists__item"><a href="contacts">Контакты</a></li>
-    </ul>
-</nav>
-
-<!--
     *********MAIN*******
 -->
 <main class="main">
@@ -154,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section class="section section-stack">
+    <section class="section section-stack" id="stack">
         <div class="wrapper">
             <h2 class="section__title">Skills</h2>
             <div class="section-stack__item">
@@ -203,7 +198,7 @@
             <div class="portfolio__items">
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/westwing.jpg" alt="pic">
+                        <img src="img/westwing.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -215,7 +210,7 @@
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/arlihan.jpg" alt="pic">
+                        <img src="img/arlihan.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -226,7 +221,7 @@
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/sarsteklo.jpg" alt="pic">
+                        <img src="img/sarsteklo.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -237,7 +232,7 @@
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/82-15.jpg" alt="pic">
+                        <img src="img/82-15.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -249,7 +244,7 @@
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/eko.jpg" alt="pic">
+                        <img src="img/eko.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -260,7 +255,7 @@
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/taxi.jpg" alt="pic">
+                        <img src="img/taxi.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -272,19 +267,19 @@
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/dsk.jpg" alt="pic">
+                        <img src="img/dsk.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
                             <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
                                 Интеграция на JOOMLA</h4>
-                            <a href="https://westwing.ru" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+                            <a href=https://dobraya-stroy.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__items__item">
                     <div class="portfolio__items__item--front">
-                        <img src="img/artwood.jpg" alt="pic">
+                        <img src="img/artwood.jpg" loading="lazy" alt="pic" width="356px" height="200px">
                     </div>
                     <div class="portfolio__items__item--back">
                         <div class="portfolio__items__item--text">
@@ -298,7 +293,12 @@
         </div>
     </section>
 </main>
-<footer class="footer">
+<a href="#home" class="js-top link-top">
+    <svg width="24px" height="24px">
+        <use xlink:href="img/sprites/sprite.svg#up"></use>
+    </svg>
+</a>
+<footer class="footer" id="contacts">
     <div class="wrapper">
         <div class="footer__content">
             <h2 class="section__title">Контакты</h2>

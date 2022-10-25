@@ -29,6 +29,10 @@ a {
   }
 }
 
+.js-menu__link-active {
+  color: $color-yellow;
+}
+
 h1 {
   margin-top: 30px;
   font-size: 24px;
@@ -50,6 +54,39 @@ h2 {
     height: 6px;
     width: 180px;
     background-color: $color-yellow;
+  }
+}
+
+.link-top {
+  width: 0;
+  height: 0;
+  background-color: $color-yellow;
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  transition: all .3ms;
+
+  &.visible {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    animation: visible 2s forwards;
+    z-index: 9;
+  }
+}
+
+@keyframes visible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -343,7 +380,6 @@ h2 {
     top: 0;
     bottom: 0;
     opacity: .5;
-    z-index: 11;
     background-image: linear-gradient($color-yellow 50%, transparent 0);
     background-size: 100% 10px;
     background-position: 0 0;
@@ -438,7 +474,7 @@ h2 {
       border-radius: 12px;
       transition: all 1s ease;
       transform-style: preserve-3d;
-      box-shadow: 1px 3px 3px rgba(0,0,0,0.2);
+      box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
       margin-bottom: 20px;
 
       &:hover {
@@ -490,7 +526,7 @@ h2 {
 
 .footer {
   position: relative;
-  
+
   &__content {
     height: 500px;
     display: flex;
