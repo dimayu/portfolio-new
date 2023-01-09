@@ -1,13 +1,4 @@
-# gulp
-
-## :fire: Особенности
-* именование классов по [БЭМ](https://ru.bem.info/)
-* используется БЭМ-структура
-* используется препроцессор [SCSS](https://sass-lang.com/)
-* используется транспайлер [Babel](https://babeljs.io/) для поддержки современного JavaScript (ES6) в браузерах
-* используется [Webpack](https://webpack.js.org/) для сборки JavaScript-модулей
-* используется жёсткий кодгайд
-* используется проверка кода на ошибки перед коммитом
+# Portfolio
 
 ## :hammer_and_wrench: Установка
 * установите [NodeJS](https://nodejs.org/en/)

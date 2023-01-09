@@ -568,13 +568,17 @@ h2 {
       @include size-xxs(12);
 
       cursor: pointer;
-      height: 200px;
+      height: 199px;
       position: relative;
       border-radius: 12px;
-      transition: all 1s ease;
-      transform-style: preserve-3d;
-      box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
       margin-bottom: 20px;
+      overflow: hidden;
+
+      &:hover {
+        .portfolio__items__item--back {
+          left: 0;
+        }
+      }
 
       @include sm-block() {
         height: 300px;
@@ -584,39 +588,37 @@ h2 {
         height: 240px;
       }
 
-      &:hover {
-        transform: rotateY(-180deg);
-      }
-
       &--front,
       &--back {
         width: 100%;
         height: 100%;
-        border-radius: 12px;
         text-align: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        backface-visibility: hidden;
-        background-color: #1d1d1d;
+        background-color: #1d1d1de8;
         box-sizing: border-box;
-        overflow: hidden;
       }
 
       &--front {
         background: linear-gradient(to top left, $color-yellow, #1d1d1d);
-        transform-style: preserve-3d;
 
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
+
+        &:nth-child(1) {
+          img {
+            height: auto;
+          }
+        }
       }
 
       &--back {
-        transform: rotateY(180deg);
-        transform-style: preserve-3d;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.4s;
       }
 
       &--text {
@@ -625,8 +627,6 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transform: translateZ(100px) scale(0.98);
-        perspective: inherit;
       }
 
       &--title {
