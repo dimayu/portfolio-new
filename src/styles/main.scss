@@ -1,5 +1,4 @@
 @import "base/_general.scss";
-@import "base/_fonts.scss";
 @import "smart-grid.scss";
 
 .wrapper {
@@ -568,7 +567,7 @@ h2 {
       @include size-xxs(12);
 
       cursor: pointer;
-      height: 199px;
+      height: 240px;
       position: relative;
       border-radius: 12px;
       margin-bottom: 20px;

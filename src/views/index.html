@@ -2,356 +2,427 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>gulp-scss-starter</title>
-    <meta name="theme-color" content="#fff">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Портфолио Junior Frontend / HTML Верстальщик</title>
+  <meta name="description" content="Портфолио Junior Frontend / HTML Верстальщик.">
+  <meta name="theme-color" content="#fff">
+  <meta name="robots" content="index">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
 
-
-<!--
-    *********HEADER*******
--->
 <header class="header">
-    <div class="header__nav">
-        <div class="wrapper">
-            <div class="header__nav__items">
-                <div class="header__nav__items__item">
-                    <a href="#">
-                        <img src="img/logo.svg" alt="logo" width="60px" height="30px">
-                    </a>
-                </div>
-                <nav class="header__nav__items__item header__nav__items__item--nav">
-                    <ul class="header__menu js-menu">
-                        <li class="header__menu__item"><a href="#home" class="header__menu__item--link js-menu__link js-menu__link-active">Главная</a></li>
-                        <li class="header__menu__item"><a href="#about-me" class="header__menu__item--link js-menu__link">Обо мне</a></li>
-                        <li class="header__menu__item"><a href="#stack" class="header__menu__item--link js-menu__link">Мой стек</a></li>
-                        <li class="header__menu__item"><a href="#portfolio" class="header__menu__item--link js-menu__link">Портфолио</a></li>
-                        <li class="header__menu__item"><a href="#contacts" class="header__menu__item--link js-menu__link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div class="header__nav__items__item">
-                    <a href="resume.pdf" download="resume.pdf">
-                        <span>Скачать CV</span>
-                        <svg width="14px" height="14px">
-                            <use xlink:href="img/sprites/sprite.svg#download"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="header-mobile__button">
-                    <div class="header-mobile__button--line"></div>
-                    <div class="header-mobile__button--line"></div>
-                    <div class="header-mobile__button--line"></div>
-                </div>
-            </div>
-        </div>
-        <nav class="mobile-menu">
-            <ul class="mobile-menu__lists js-menu">
-                <li class="mobile-menu__lists__item"><a href="#home" class="js-menu__link js-menu__link-active">Главная</a></li>
-                <li class="mobile-menu__lists__item"><a href="#about-me" class="js-menu__link">Обо мне</a></li>
-                <li class="mobile-menu__lists__item"><a href="#stack" class="js-menu__link">Мой стек</a></li>
-                <li class="mobile-menu__lists__item"><a href="#portfolio" class="js-menu__link">Портфолио</a></li>
-                <li class="mobile-menu__lists__item"><a href="#contacts" class="js-menu__link">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
+  <div class="header__nav">
     <div class="wrapper">
-        <div class="section home" id="home">
-            <div class="home__text-bg">
-                hello
-            </div>
-            <div class="home__items">
-                <div class="home__items__item home__items__item--text">
-                    <h2>Меня зовут<br>Шарипзянов Дамир</h2>
-                    <h1>Я WEB DEVELOPER</h1>
-                </div>
-                <div class="home__items__item home__items__item--photo">
-                    <div class="home__items__item--photo-inner">
-                        <div class="home__items__item--photo-inner--pic">
-                            <img src="img/photo.png" alt="photo">
-                        </div>
-                    </div>
-                </div>
-                <div class="home__items__item home__items__item--social social-links">
-                    <h4 class="social-links__title">Контакты</h4>
-                    <hr class="social-links__hr">
-                    <div class="social-links__items">
-                        <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#mail"></use>
-                            </svg>
-                        </a>
-                        <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#skype"></use>
-                            </svg>
-                        </a>
-                        <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/"
-                           class="social-links__items__item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#in"></use>
-                            </svg>
-                        </a>
-                        <a href="https://github.com/dimayu" class="social-links__items__item">
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#git"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="header__nav__items">
+        <div class="header__nav__items__item">
+          <a href="#">
+            <img src="img/logo.svg" alt="logo" width="60" height="30">
+          </a>
         </div>
+        <nav class="header__nav__items__item header__nav__items__item--nav">
+          <ul class="header__menu js-menu">
+            <li class="header__menu__item">
+              <a href="#home" class="header__menu__item--link js-menu__link js-menu__link-active">Главная</a>
+            </li>
+            <li class="header__menu__item">
+              <a href="#about-me" class="header__menu__item--link js-menu__link">Обо мне</a>
+            </li>
+            <li class="header__menu__item">
+              <a href="#stack" class="header__menu__item--link js-menu__link">Мой стек</a>
+            </li>
+            <li class="header__menu__item">
+              <a href="#portfolio" class="header__menu__item--link js-menu__link">Портфолио</a>
+            </li>
+            <li class="header__menu__item">
+              <a href="#contacts" class="header__menu__item--link js-menu__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__nav__items__item">
+          <a href="resume.pdf" download="resume.pdf">
+            <span>Скачать CV</span>
+            <svg width="14px" height="14px">
+              <use xlink:href="img/sprites/sprite.svg#download"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header-mobile__button">
+          <div class="header-mobile__button--line"></div>
+          <div class="header-mobile__button--line"></div>
+          <div class="header-mobile__button--line"></div>
+        </div>
+      </div>
     </div>
+    <nav class="mobile-menu">
+      <ul class="mobile-menu__lists js-menu">
+        <li class="mobile-menu__lists__item"><a href="#home" class="js-menu__link js-menu__link-active">Главная</a></li>
+        <li class="mobile-menu__lists__item"><a href="#about-me" class="js-menu__link">Обо мне</a></li>
+        <li class="mobile-menu__lists__item"><a href="#stack" class="js-menu__link">Мой стек</a></li>
+        <li class="mobile-menu__lists__item"><a href="#portfolio" class="js-menu__link">Портфолио</a></li>
+        <li class="mobile-menu__lists__item"><a href="#contacts" class="js-menu__link">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="wrapper">
+    <div class="section home" id="home">
+      <div class="home__text-bg">
+        hello
+      </div>
+      <div class="home__items">
+        <div class="home__items__item home__items__item--text">
+          <h2>Меня зовут<br>Шарипзянов Дамир</h2>
+          <h1>Я WEB DEVELOPER</h1>
+        </div>
+        <div class="home__items__item home__items__item--photo">
+          <div class="home__items__item--photo-inner">
+            <div class="home__items__item--photo-inner--pic">
+              <picture>
+                <source srcset="img/photo.webp" type="image/webp">
+                <img src="img/photo.png" alt="Junior Frontend / HTML Верстальщик" width="317" height="300">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="home__items__item home__items__item--social social-links">
+          <h4 class="social-links__title">Контакты</h4>
+          <hr class="social-links__hr">
+          <div class="social-links__items">
+            <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#mail"></use>
+              </svg>
+            </a>
+            <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#skype"></use>
+              </svg>
+            </a>
+            <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/"
+               class="social-links__items__item" target="_blank">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#in"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/dimayu" class="social-links__items__item" target="_blank">
+              <svg>
+                <use xlink:href="img/sprites/sprite.svg#git"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
-<!--
-    *********MAIN*******
--->
 <main class="main">
-    <section class="section about-me" id="about-me">
-        <div class="wrapper">
-            <h2 class="section__title">Обо мне</h2>
-            <div class="about-me__text">
-                5 лет работаю HTML верстальщиком.
-                Глубоко изучаю frontend в области React, пишу пет проекты, выполнил много работ по интеграции верстки на CMS WP и Joomla.
-                Ценю в людях честность, открытость и серьезное отношение к делу.
-            </div>
+  <section class="section about-me" id="about-me">
+    <div class="wrapper">
+      <h2 class="section__title">Обо мне</h2>
+      <div class="about-me__text">
+        5 лет работаю HTML верстальщиком.
+        Глубоко изучаю frontend в области React, пишу пет проекты, выполнил много работ по интеграции верстки на CMS WP
+        и Joomla.
+        Ценю в людях честность, открытость и серьезное отношение к делу.
+      </div>
+    </div>
+  </section>
+  <section class="section section-stack" id="stack">
+    <div class="wrapper">
+      <h2 class="section__title">Skills</h2>
+      <div class="section-stack__item">
+        <div class="stack">
+          <div class="stack__title">HTML</div>
+          <div class="stack__percent stack__percent--1" style="width: 90%;"></div>
         </div>
-    </section>
-    <section class="section section-stack" id="stack">
-        <div class="wrapper">
-            <h2 class="section__title">Skills</h2>
-            <div class="section-stack__item">
-                <div class="stack">
-                    <div class="stack__title">HTML</div>
-                    <div class="stack__percent stack__percent--1" style="width: 90%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">CSS</div>
-                    <div class="stack__percent stack__percent--2" style="width: 90%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">SCSS</div>
-                    <div class="stack__percent stack__percent--3" style="width: 75%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">LESS</div>
-                    <div class="stack__percent stack__percent--4" style="width: 70%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">JS</div>
-                    <div class="stack__percent stack__percent--5" style="width: 50%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">React JS</div>
-                    <div class="stack__percent stack__percent--6" style="width: 30%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">Gulp</div>
-                    <div class="stack__percent stack__percent--7" style="width: 50%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">Webpack</div>
-                    <div class="stack__percent stack__percent--8" style="width: 50%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">GIT</div>
-                    <div class="stack__percent stack__percent--9" style="width: 50%;"></div>
-                </div>
-                <div class="stack">
-                    <div class="stack__title">FIGMA</div>
-                    <div class="stack__percent stack__percent--10" style="width: 60%;"></div>
-                </div>
-            </div>
+        <div class="stack">
+          <div class="stack__title">CSS</div>
+          <div class="stack__percent stack__percent--2" style="width: 90%;"></div>
         </div>
-    </section>
-    <section class="section portfolio" id="portfolio">
-        <div class="wrapper">
-            <h2 class="section__title">Мои работы</h2>
-            <div class="portfolio__items">
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/todo.png" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Пет проект на React.<br>Реализация todo листа.</h4>
-                            <a href="../todo/index.html" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                            <a href="https://github.com/dimayu/pet-project-todo" class="portfolio__items__item--link" target="_blank">посмотреть код</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/westwing.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Проработал в компании 9 месяцев<br>
-                                Редизайн сайта + стилизация различных фитч</h4>
-                            <a href="https://westwing.ru" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/arlihan.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
-                            <a href="https://arhilan.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/sarsteklo.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
-                            <a href="https://sarsteklostroy.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/82-15.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
-                                Интеграция на JOOMLA</h4>
-                            <a href="https://8215.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/eko.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
-                            <a href="https://ileco-23.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/taxi.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
-                                Интеграция на JOOMLA</h4>
-                            <a href="https://taxi-vivo.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/dsk.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
-                                Интеграция на JOOMLA</h4>
-                            <a href=https://dobraya-stroy.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio__items__item">
-                    <div class="portfolio__items__item--front">
-                        <img src="img/artwood.jpg" loading="lazy" alt="pic" width="356px" height="200px">
-                    </div>
-                    <div class="portfolio__items__item--back">
-                        <div class="portfolio__items__item--text">
-                            <h4 class="portfolio__items__item--title">Верстка лендинга<br>
-                                Интеграция на JOOMLA</h4>
-                            <a href="https://shkaf.8215.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="stack">
+          <div class="stack__title">SCSS</div>
+          <div class="stack__percent stack__percent--3" style="width: 75%;"></div>
         </div>
-    </section>
+        <div class="stack">
+          <div class="stack__title">LESS</div>
+          <div class="stack__percent stack__percent--4" style="width: 70%;"></div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">JS</div>
+          <div class="stack__percent stack__percent--5" style="width: 50%;"></div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">React JS</div>
+          <div class="stack__percent stack__percent--6" style="width: 30%;"></div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">Gulp</div>
+          <div class="stack__percent stack__percent--7" style="width: 50%;"></div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">Webpack</div>
+          <div class="stack__percent stack__percent--8" style="width: 50%;"></div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">GIT</div>
+          <div class="stack__percent stack__percent--9" style="width: 50%;"></div>
+        </div>
+        <div class="stack">
+          <div class="stack__title">FIGMA</div>
+          <div class="stack__percent stack__percent--10" style="width: 60%;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section portfolio" id="portfolio">
+    <div class="wrapper">
+      <h2 class="section__title">Мои работы</h2>
+      <div class="portfolio__items">
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/movies.webp" type="image/webp">
+              <img src="img/movies.png" loading="lazy" alt="Пет проект на React" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Пет проект на React.<br>Реализация SPA приложения Movies</h4>
+              <a href="https://pet-project-movies-3543.vercel.app/" class="portfolio__items__item--link"
+                 target="_blank">перейти на сайт</a>
+              <a href="https://github.com/dimayu/pet-project-movies" class="portfolio__items__item--link"
+                 target="_blank">посмотреть код</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/todo.webp" type="image/webp">
+              <img src="img/todo.png" loading="lazy" alt="Пет проект на React" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Пет проект на React.<br>Реализация todo листа.</h4>
+              <a href="https://pet-project-todo-p1sr.vercel.app/" class="portfolio__items__item--link" target="_blank">перейти
+                на сайт</a>
+              <a href="https://github.com/dimayu/pet-project-todo" class="portfolio__items__item--link" target="_blank">посмотреть
+                код</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/westwing.webp" type="image/webp">
+              <img src="img/westwing.jpg" loading="lazy" alt="westwing" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Проработал в компании 9 месяцев<br>
+                Редизайн сайта + стилизация различных фитч</h4>
+              <a href="https://westwing.ru" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/arlihan.webp" type="image/webp">
+              <img src="img/arlihan.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
+              <a href="https://arhilan.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/alex.webp" type="image/webp">
+              <img src="img/alex.jpg" loading="lazy" alt="Верстка лендинга" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка лендинга<br/>Интеграция верстки на WP</h4>
+              <a href="https://xn----8sbafdbldadqdn1aeo1bfdlfteov9a.xn--p1ai/" class="portfolio__items__item--link"
+                 target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/sarsteklo.webp" type="image/webp">
+              <img src="img/sarsteklo.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
+              <a href="https://sarsteklostroy.ru/" class="portfolio__items__item--link" target="_blank">перейти на
+                сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/82-15.webp" type="image/webp">
+              <img src="img/82-15.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
+                Интеграция на JOOMLA</h4>
+              <a href="https://8215.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/eko.webp" type="image/webp">
+              <img src="img/eko.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка многостраничного сайта</h4>
+              <a href="https://ileco-23.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/taxi.webp" type="image/webp">
+              <img src="img/taxi.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
+                Интеграция на JOOMLA</h4>
+              <a href="https://taxi-vivo.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/dsk.webp" type="image/webp">
+              <img src="img/dsk.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка многостраничного сайта<br>
+                Интеграция на WP</h4>
+              <a href="https://dobraya-stroy.ru/" class="portfolio__items__item--link" target="_blank">перейти на
+                сайт</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__items__item">
+          <div class="portfolio__items__item--front">
+            <picture>
+              <source srcset="img/artwood.webp" type="image/webp">
+              <img src="img/artwood.jpg" loading="lazy" alt="Верстка многостраничного сайта" width="356" height="200">
+            </picture>
+          </div>
+          <div class="portfolio__items__item--back">
+            <div class="portfolio__items__item--text">
+              <h4 class="portfolio__items__item--title">Верстка лендинга<br>
+                Интеграция на JOOMLA</h4>
+              <a href="https://shkaf.8215.ru/" class="portfolio__items__item--link" target="_blank">перейти на сайт</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <a href="#home" class="js-top link-top">
-    <svg width="24px" height="24px">
-        <use xlink:href="img/sprites/sprite.svg#up"></use>
-    </svg>
+  <svg width="24px" height="24px">
+    <use xlink:href="img/sprites/sprite.svg#up"></use>
+  </svg>
 </a>
 <footer class="footer" id="contacts">
-    <div class="wrapper">
-        <div class="footer__content">
-            <h2 class="section__title">Контакты</h2>
-            <div class="footer__social-links social-links">
-                <div class="social-links__items">
-                    <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
-                        <svg>
-                            <use xlink:href="img/sprites/sprite.svg#mail"></use>
-                        </svg>
-                    </a>
-                    <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
-                        <svg>
-                            <use xlink:href="img/sprites/sprite.svg#skype"></use>
-                        </svg>
-                    </a>
-                    <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
-                        <svg>
-                            <use xlink:href="img/sprites/sprite.svg#telegram"></use>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/" class="social-links__items__item">
-                        <svg>
-                            <use xlink:href="img/sprites/sprite.svg#in"></use>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/dimayu" class="social-links__items__item">
-                        <svg>
-                            <use xlink:href="img/sprites/sprite.svg#git"></use>
-                        </svg>
-                    </a>
-                </div>
-            </div>
+  <div class="wrapper">
+    <div class="footer__content">
+      <h2 class="section__title">Контакты</h2>
+      <div class="footer__social-links social-links">
+        <div class="social-links__items">
+          <a href="mailto:dimayu82@gmail.com" class="social-links__items__item">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#mail"></use>
+            </svg>
+          </a>
+          <a href="skype:dimayu82@gmail.com" class="social-links__items__item">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#skype"></use>
+            </svg>
+          </a>
+          <a href="tg://resolve?domain=D_Sh82/" class="social-links__items__item">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/damir-sharipzyanov-572525216/" class="social-links__items__item" target="_blank">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#in"></use>
+            </svg>
+          </a>
+          <a href="https://github.com/dimayu" class="social-links__items__item" target="_blank">
+            <svg>
+              <use xlink:href="img/sprites/sprite.svg#git"></use>
+            </svg>
+          </a>
         </div>
+      </div>
     </div>
+  </div>
 </footer>
-
-
 <script src="js/main.js"></script>
 </body>
 
